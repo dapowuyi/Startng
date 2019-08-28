@@ -57,14 +57,14 @@ img{
 
 .personal-details{
     margin-left: 20px;
-    margin-top: 30px;
-    
+    margin-top: 30px;    
 }
 
 .details{
     width: 60%;
     float: right;
     padding-right: 25px;
+    margin-top: 10px; 
 }
 
 h3{

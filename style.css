@@ -85,3 +85,21 @@ h3{
 .sm a:hover{
     color: #e600ac;
 }
+
+.proficiency {
+    width: 100%;
+    background-color: #ddd;   
+  }
+  
+  .skills {
+    text-align: right;
+    color: white;
+    background-color: #006666;
+    height: 5px;
+  }
+  
+  .html {width: 90%; }
+  .css {width: 80%; }
+  .js {width: 45%; }
+  .sql {width: 65%; }
+  .csharp {width: 65%;}

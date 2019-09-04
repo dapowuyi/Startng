@@ -4,36 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>CV</title>
 </head>
 <body>
-    <div class="container" style="margin-left: 100px">
-        <h2>CURRICULUM VITAE</h2>
-        <h2>Adedapo Adewuyi</h2>
-        <p><i>dapowuyi@yahoo.com</i></p>  
-        <p>+234-8179334545</p>
-        <h3><b><u>Professional Summary</u></b></h3>   
-        <p>Junior software developer with a knowledge of C#, MS SQL, HTML and CSS. I am a <br>
-            willing and fast learner aiming to hone and leverage on backend technologies so as to <br>write highly scalable web apps. </p>
+    <div class="container">
         
-        <h3><b><u>Area of proficiency</u></b></h3>
+        <h2 class="name">Adedapo Adewuyi</h2>
+        <div class="objective">
+        <div class="image">
+        <img src="https://res.cloudinary.com/dapowuyi/image/upload/v1566564364/Papi_yrxvpy.jpg" alt="Dapo">
+        </div>
         
+        <div class="summary">
+        <p>Junior software developer with a knowledge of C#, MS SQL, HTML and CSS. A javascript beginner. I am a 
+            willing and fast learner aiming to hone and leverage on backend technologies so as to write highly scalable web apps. </p>
+        </div>
+        </div>
+        <div>
+        <div class="personal-info">
+            <div class="personal-details">
+        <h3><b>Contact Details</b></h3>
+        <p><i class="fas fa-envelope"></i> &nbsp dapowuyi@yahoo.com</p>  
+        <p><i class="fas fa-mobile"></i> &nbsp +234-8179334545</p> 
+
+        <p>
+        <button class="triggerModal">Send me a message</button>
+        <!-- <a href="contact.html"><button class="triggerModal">Send me a message</button></a> -->
+
+        </p>
+
+        <div class="modal">
+                <div class="contact_container">
+                    
+                    <span class="close-button">&times;</span>
+                    <h2>CONTACT ME</h2>
+                    <div class="contact">
+                            <label for="" class="msg"></label>
+                            <form class="form" action="">
+                                    <p>
+                                        <label for="title">Title:</label> 
+                                        <input type="text" id="title" placeholder="Title">
+                                    </p>
+                                    <p>
+                                        <label for="Name">Name:</label>
+                                        <input type="text" id="name" placeholder="Name">
+                                    </p>     
+                                    <p>
+                                        <label for="Email">Email:</label>
+                                        <input type="text" id="email" placeholder="Email">
+                                    </p> 
+                                    <p>
+                                        <label for="textarea">Type your message here:</label>
+                                        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                                    </p>
+                                    
+                                    <button class="contact_btn">Send Message</button>              
+                                </form>
+                            </div>
+                            <div class="contact_sm">
+                                    <a href="https://twitter.com/dapowuyi" target="_blank"><i class="fab fa-twitter"></i></a> &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
+                                    <a href="https://web.facebook.com/dapo.adewuyi" target="_blank"><i class="fab fa-facebook-square"></i></a> &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
+                                    <a href="https://instagram.com/dapowuyi" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
+                                    <a href="https://wa.me/2348127231066" target="_blank"><i class="fab fa-whatsapp"></i></a> &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
+                                    <a href="https://www.linkedin.com/in/dapo-adewuyi" target="_blank"><i class="fab fa-linkedin"></i></a> &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
+                                    <a href="https://github.com/dapowuyi?tab=repositories" target="_blank"><i class="fab fa-github-square"></i></i></a>
+                                </div>
+                    </div>
+                </div>
+            
+        <div class="sm">
+			<a href="https://twitter.com/dapowuyi" target="_blank"><i class="fab fa-twitter"></i></a> &nbsp &nbsp &nbsp 
+			<a href="https://web.facebook.com/dapo.adewuyi" target="_blank"><i class="fab fa-facebook-square"></i></a> &nbsp &nbsp &nbsp 
+			<a href="https://instagram.com/dapowuyi" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp &nbsp &nbsp 
+            <a href="https://wa.me/2348127231066" target="_blank"><i class="fab fa-whatsapp"></i></a> &nbsp &nbsp &nbsp
+            <a href="https://www.linkedin.com/in/dapo-adewuyi" target="_blank"><i class="fab fa-linkedin"></i></a> &nbsp &nbsp &nbsp
+            <a href="https://github.com/dapowuyi?tab=repositories" target="_blank"><i class="fab fa-github-square"></i></i></a>
+            
+        </div>
+        <h3><b>Skills</b></h3>
+        <div>HTML
+        <div class="proficiency">
+        <div class="skills html"></div>
+        </div></div>
+
+        <div>CSS
+        <div class="proficiency">
+        <div class="skills css"></div>
+        </div></div>
+
+        <div>C#
+        <div class="proficiency">
+        <div class="skills csharp"></div>
+        </div></div>
+
+        <div>SQL
+        <div class="proficiency">
+        <div class="skills sql"></div>
+        </div></div>
+
+        <div>Javascript
+        <div class="proficiency">
+        <div class="skills js"></div>
+        </div></div>
+
+        <h3><b>Area of proficiency</b></h3>
         <ul>
             <li>Software programming in the C# language.</li>
             <li>Knowledge of version control with git and GitHub.</li>
             <li>Knowledge of scrum/Agile project management using Pivotal Tracker</li>
             <li>Database Management using Microsoft SQL Server, MySql.</li>
         </ul>
-        
-        <h3><b><u>Employment History</u></b></h3>
+
+        <h3><b>Languages spoken</b></h3>
+        <ul>
+            <li>English</li>
+            <li>Yoruba</li>
+            <li>French (beginner)</li>
+        </ul>
+        </div>
+    </div>
+        <div class="details">
+        <h3><b>Employment History</b></h3>
         
         <p>2015(Mar) – present</p>
         <h4><b>Personal Projects:</b></h4>
         <ul>
-                <li>Currently working on the design of a website GoBetween (a platform that <br> connects food manufacturers and suppliers who have packaged foods that <br> 
-                    are getting to the end of their shelf life to people who need them).</li>
-                <li>Participated in the development of a windows application Hospital <br> Management System (HMS) for use in hospital administration.</li>
-                <li>Computer hardware/software and network equipment procurement, <br> setup and troubleshooting.</li>
+                <li>Currently working on the design of a website GoBetween (a platform that connects food manufacturers and suppliers who have packaged foods that 
+                    are reaching the end of their shelf life to people who need them).</li>
+                <li>Participated in the development of a windows application Hospital Management System (HMS) for use in hospital administration.</li>
+                <li>Computer hardware/software and network equipment procurement, setup and troubleshooting.</li>
         </ul>
         
         <p>2012(Oct) – 2015 (Feb)</p>
@@ -41,21 +142,25 @@
         <h4><i>Software Developer</i></h4>
         <p>Responsibilities:</p>
         <ul>
-                <li>Designed, wrote, and troubleshoot software programs and in C# and VB.Net <br> covering the ASP.Net framework (webforms and applications, web services), <br>  
+                <li>Designed, wrote, and troubleshoot software programs and in C# and VB.Net covering the ASP.Net framework (webforms and applications, web services), <br>  
                 windows applications, IIS etc</li>
                 <li>Designed and managed databases for the said programs.</li>
-                <li>Team participation in software project design, troubleshooting, implementation <br> and support for clients. </li>
+                <li>Team participation in software project design, troubleshooting, implementation  and support for clients. </li>
                 <li>Projects undertaken includes:
                         <ul>
-                            - A personal assignment/thesis designing a web shop/ cart application and <br> a windows version of it.<br>
-                            - Worked as a team member on an application for integrated settlement <br>(UBISS) for United Bank of Africa, Nigeria.
+                            - A personal assignment/thesis designing a web shop/ cart application and a windows version of it.<br>
+                            - Worked as a team member on an application for integrated settlement (UBISS) for United Bank of Africa, Nigeria.
                         </ul>
                 </li>
         </ul>
-        <h3><b><u>Education</u></b></h3>
+        <h3><b>Education</b></h3>
         <ul>
         <li>2004–2008 Olabisi Onabanjo University, Ago-Iwoye, Ogun State, Nigeria B.Sc. <br> Physics and Electronics</li>
         </ul>
     </div>
+</div>
+</div>
+    
+<script src="firstname.js"></script>
 </body>
 </html>

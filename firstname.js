@@ -8,16 +8,6 @@ let msg = document.querySelector(".msg");
         modal.classList.toggle("show-modal");
     }
 
-    // const windowOnClick =(event) => {
-    //     if (event.target === modal){
-    //         modal.classList.toggle("show-modal");
-    //     }
-    //     if (event.target === modal) {
-    //         toggleModal();
-    //         msg.textContent = "";
-    //     }
-    // }
-
     const windowOnClick = (event) => {
         if (event.target === modal) {
             toggleModal();
@@ -30,16 +20,26 @@ let msg = document.querySelector(".msg");
     window.addEventListener("click", windowOnClick);
 
 
-form.title.addEventListener('input', e =>{
+form.title.addEventListener('input', (e) =>{
     msg.textContent = "";
     const validator = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g;
-    let details = title.value;    
+    if (!validator.test(form.title.value)) {
+        msg.textContent = "Please, enter valid title";
+        msg.style.color = "red";
+        return false;
+    }     
 })
 
 form.name.addEventListener('input', (e) =>{
 
     msg.textContent = "";
     const validator = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g;
+    if (!validator.test(form.name.value)) {
+        msg.textContent = "Please, enter valid name & not numbers numbers";
+        msg.style.color = "red";
+        return false;
+    } 
+
 })
 
 form.email.addEventListener('input', (e) =>{
@@ -47,6 +47,7 @@ form.email.addEventListener('input', (e) =>{
     const validator = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!validator.test(form.email.value)) {
         msg.textContent = "Please, enter valid email address";
+        msg.style.color = "red";
         return false;
     } 
 })
@@ -78,8 +79,6 @@ form.addEventListener('submit', (e)=>{
     }
     
     
-    
-
     form.title.value = "";
     form.email.value = "";
     form.name.value = "";

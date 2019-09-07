@@ -83,11 +83,12 @@ form.addEventListener('submit', (e)=>{
     form.email.value = "";
     form.name.value = "";
     form.textarea.value = "";
-    msg.textContent = "";
-
+    
     msg.textContent = "Thank you for your message. I will reach you shortly";
     msg.style.color = "red";
     alert("Thanks for your message. I will reach you shortly");
+    msg.textContent = "";
 
-    window.addEventListener("click", windowOnClick);
+
+    toggleModal();
 })
